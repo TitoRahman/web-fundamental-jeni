@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*body {*/
+/*    background-color: black;*/
+/*}*/
+
+/*!* SELECTOR CLASS*!*/
+/*.paragraph {*/
+/*    color: pink;*/
+/*}*/
+
+/*!*SELECTOR ID*!*/
+/*#paragraph {*/
+/*    color: lightblue;*/
+/*}*/
+
+/*!* SELECTOR ELEMENT *!*/
+/*p {*/
+/*    color: white;*/
+/*}*/
+body {
+    font-family: "Roboto", sans-serif;
+}
+.main-title {
+    text-align: center;
+}
+.caption {
+    text-align: center;
+}
+.sub-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+.text-pink {
+    color: pink;
+}
+
+.text-green {
+    color: green;
+}
+
+.container {
+    padding: 10px;
+    background-color:pink;
+}
+
+.sub-container {
+    background-color: lightblue;
+}
+
+.list-item li {
+    color: aqua;
+}
+
+.list-item-2 li {
+    color: pink;
+}
+
+.container-2 .item {
+    background-color: pink;
+}
+
+.btn {
+    border:none;
+    padding:10px;
+}
+
+.btn-active {
+    background-color: dodgerblue;
+}
+
+.btn-disabled {
+    background-color: #6fb7ff;
+}
+
+.quotes {
+    padding: 50px 10px 50px 10px;
+    background-color: lightblue;
+    border-left: solid cornflowerblue;
+    width: 100%;
+    height: fit-content;
+}
+
+.container-box {
+    width: 100vw;
+    background-color: lightblue;
+    height: 200px;
+}
+
+.box {
+    background-color: pink;
+    width: 80%;
+    height: 100px;
+    box-shadow: 1px 1px 50px rgb(0 0 0 / 0.4);
+}
