@@ -1,0 +1,66 @@
+/* FLEX - Hanya Horizontal atau Vertical */
+/* GRID - Bisa Horizontal dan Vertical */
+
+body {
+    margin: 0;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: pink;
+    justify-content: space-between;
+    
+}
+
+.box {
+    padding: 50px;
+    background-color: brown;
+
+}
+
+.navigation-container {
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.397);
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+}
+/* .logo {
+    flex-grow: 1;
+} */
+.nav-menu {
+    display: flex;
+    gap: 10px;
+    /* background-color: rgb(255, 253, 127); */
+    /* flex-grow: 2; */
+
+}
+
+.search-container {
+    flex-grow: 1;
+    /* background-color: aquamarine; */
+
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.search-container input {
+    width: 100%;
+    border: none;
+}
+
+.search-container img {
+    width: 20px;
+}
