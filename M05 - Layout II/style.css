@@ -41,41 +41,52 @@
 /*    background-color: yellow;*/
 /*}*/
 
-body {
-    min-height: 100vh;
+/*body {*/
+/*    min-height: 100vh;*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 3fr;*/
+/*    grid-template-rows: 75px 1fr auto;*/
+/*    grid-template-areas:"header header"*/
+/*                        "aside main"*/
+/*                        "footer footer";*/
+/*    gap: 10px;*/
+/*}*/
+
+/*header {*/
+/*    grid-area: header;*/
+/*    background-color: lightseagreen;*/
+
+/*!*    LAYOUT*!*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*header .menus {*/
+/*    display: flex;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*main {*/
+/*    grid-area: main;*/
+/*    background-color: palevioletred;*/
+/*}*/
+/*footer {*/
+/*    background-color: yellow;*/
+/*    grid-area: footer;*/
+/*}*/
+/*aside {*/
+/*    background-color: lightskyblue;*/
+/*    grid-area: aside;*/
+/*}*/
+
+.container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 75px 1fr auto;
-    grid-template-areas:"header header"
-                        "aside main"
-                        "footer footer";
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
 }
-
-header {
-    grid-area: header;
-    background-color: lightseagreen;
-
-/*    LAYOUT*/
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .menus {
-    display: flex;
-    gap: 10px;
-}
-
-main {
-    grid-area: main;
-    background-color: palevioletred;
-}
-footer {
-    background-color: yellow;
-    grid-area: footer;
-}
-aside {
-    background-color: lightskyblue;
-    grid-area: aside;
+.item {
+    padding: 10px;
+    background-color: black;
+    color: white;
 }
