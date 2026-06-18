@@ -1,0 +1,183 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f5f5f5;
+
+}
+
+nav{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1rem 2rem;
+
+    margin:1rem;
+
+    border-radius:20px;
+
+}
+
+.logo{
+
+    font-size:1.5rem;
+
+    font-weight:bold;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:1rem;
+
+    align-items:center;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:black;
+
+}
+
+.nav-links button,
+
+.card button{
+
+    border:none;
+
+    padding:0.75rem 1rem;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.burger{
+
+    display:none;
+
+    font-size:1.5rem;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:3rem 1rem;
+
+}
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:1rem;
+
+    padding:1rem;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    padding:1rem;
+
+}
+
+.card img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:10px;
+
+}
+
+.card h3{
+
+    margin-top:1rem;
+
+}
+
+.card p{
+
+    margin:0.5rem 0;
+
+}
+
+footer{
+
+    text-align:center;
+
+    padding:2rem;
+
+}
+
+@media (max-width:800px){
+
+    .products{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:500px){
+
+    .products{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    .burger{
+
+        display:block;
+
+    }
+
+    .hero{
+
+        padding:2rem 1rem;
+
+    }
+
+}

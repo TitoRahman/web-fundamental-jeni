@@ -1,133 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
     <body>
-        <div id="div1" class="div-class">
-            DIVIDER
-        </div>
-        <span>
-            SPAN
-        </span>
-        <header>
-            HEADER
-        </header>
-        <nav>
-            NAVIGATION
-        </nav>
-        <aside>
-            SIDE BAR
-        </aside>
-        <footer>
-            FOOTER
-        </footer>
-        <section>
-            SECTION
-        </section>
-        <main>
-            MAIN CONTENT
-        </main>
-
-
-        <!-- LOGIN FORM -->
-         <h1>LOGIN FORM</h1>
-        <form action="#" method="post">
-            <label for="username">username:</label>
-            <input type="text" name="username" placeholder="Masukkan username">
+        <form>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Username">
             <br>
-            <label for="password">password:</label>
-            <input type="password" name="password" placeholder="Masukkan password">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email">
             <br>
-        </form>
-        <!-- MEMBER DATA FORM -->
-         <form action="member.js" method="post">
-            <h1>MEMBER DATA FORM</h1>
-            <label for="name">name:*</label>
-            <input type="text" name="name" placeholder="Masukkan nama" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password">
             <br>
-            <label for="email">email:</label>
-            <input type="email" name="email" placeholder="Masukkan email">
-            <br>
-            <label for="age">age:</label>
-            <input type="number" name="age" placeholder="Masukkan umur" min="0">
-            <br>
-            <label for="birthdate">birthdate:</label>
-            <input type="date" name="birthdate">
-            <br>
-            <label for="photo">photo:</label>
-            <input type="file" name="photo">
-            <br>
-            <label for="gender">gender :</label> <br>
-            <input type="radio" name="gender" value="male"> Male <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <label for="grade">grade :</label> <br>
-            <input type="radio" name="grade" value="X"> X<br>
-            <input type="radio" name="grade" value="XI"> XI <br>
-            <input type="radio" name="grade" value="XII"> XII
-            <br>
-            <label for="hobby">hobby :</label> <br>
-            <input type="checkbox" name="hobby" value="reading"> Reading <br>
-            <input type="checkbox" name="hobby" value="traveling"> Traveling <br>
-            <input type="checkbox" name="hobby" value="cooking"> Cooking <br>
-            <input type="checkbox" name="hobby" value="sports"> Sports <br>
-            <input type="checkbox" name="hobby" value="music"> Music <br>
-            <br>
-            <label for="country">country :</label>
-            <select name="country">
-                <option value="indonesia">Indonesia</option>
-                <option value="malaysia">Malaysia</option>
-                <option value="singapore">Singapore</option>
-                <option value="thailand">Thailand</option>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="phone">
+            <hr>
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+            <hr>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="no">Prefer Not To Say</option>
             </select>
             <br>
-            <label for="bio">bio :</label> <br>
-            <textarea name="bio" rows="4" cols="40" maxlength="200" placeholder="Masukkan bio"></textarea>
-            <br>
-            <button type="submit" disabled>Submit</button>
-         </form>
+            <p>Choose your grade</p>
+            <label for="grade-x">Grade X</label>
+            <input type="radio" name="grade" id="grade-x">
+            <label for="grade-xi">Grade Xi</label>
+            <input type="radio" name="grade" id="grade-xi">
 
-        <!-- TABLE -->
-         <table border="2">
-            <caption>DATA MEMBER</caption>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Age</th>
-                <th>Birthdate</th>
-                <th>Photo</th>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>john.doe@example.com</td>
-                <td>30</td>
-                <td>1994-01-01</td>
-                <td><img src="../imgs/image.png" width="50" alt="Photo"></td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>john.doe@example.com</td>
-                <td>30</td>
-                <td>1994-01-01</td>
-                <td><img src="../imgs/image.png" width="50" alt="Photo"></td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>john.doe@example.com</td>
-                <td>30</td>
-                <td>1994-01-01</td>
-                <td><img src="../imgs/image.png" width="50" alt="Photo"></td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>john.doe@example.com</td>
-                <td>30</td>
-                <td>1994-01-01</td>
-                <td><img src="../imgs/image.png" width="50" alt="Photo"></td>
-            </tr>
-         </table>
+            <p>Have you read everything?</p>
+            <label for="book-1">Book I</label>
+            <input type="checkbox" name="book" id="book-1">
+            <label for="book-2">Grade Xi</label>
+            <input type="checkbox" name="book" id="book-2">
+
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button>Submit</button>
+        </form>
     </body>
 </html>
