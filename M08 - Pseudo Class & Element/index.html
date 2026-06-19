@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- :: element | : class -->
+        <div class="box e-hover"></div>
+    <button class="e-focus">BTN</button>
+        <input type="text" class="e-focus">
+        <input type="text" class="e-active">
+    <button class="e-active">ACTIVATING </button>
+    
+    
+    <div class="container">
+        <div class="box">2</div>
+        <div class="box">1</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">4</div>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, soluta.
+    </p>
+
+        <a href="">THIS IS A LINK</a>
+        <a href="">THIS IS A LINK</a>
+        <a href="">THIS IS A LINK</a>
+        <a href="">THIS IS A LINK</a>
+        <a href="">THIS IS A LINK</a>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, soluta.
+    </p>
+
+    <button class="btn-hover btn-focus btn-active btn-disabled" disabled>BTN
+        PRESS ME!
+    </button>
+
+        <button id="openBtn">Open Dialog</button>
+
+        <dialog id="myDialog">
+            <h2>Hello!</h2>
+            <p>This is a dialog.</p>
+            <button id="closeBtn">Close</button>
+        </dialog>
+
+        <script>
+            const dialog = document.getElementById("myDialog");
+
+            document.getElementById("openBtn")
+                .addEventListener("click", () => {
+                    dialog.showModal();
+                });
+
+            document.getElementById("closeBtn")
+                .addEventListener("click", () => {
+                    dialog.close();
+                });
+        </script>
+    </body>
+</html>

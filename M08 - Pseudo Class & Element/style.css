@@ -1,0 +1,85 @@
+/* HOVER */
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+/* Ketika user sedang meletakkan cursor di atas element*/
+.e-hover:hover {
+    background-color: greenyellow;
+}
+
+/* Ketika user berada/sedang melakukan sesuatu di element*/
+.e-focus:focus {
+    background-color: yellow;
+}
+
+/* Ketika element di klik*/
+.e-active:active {
+    background-color: blue;
+}
+
+
+.container .box:first-child {
+    background-color: blue;
+}
+
+.container .box:nth-child(3) {
+    background-color: blue;
+}
+
+.container .box:last-child {
+    background-color: cyan;
+}
+
+p::before {
+    content: 'THIS IS A PARAGRAPH!';
+}
+
+a:before {
+    content: "⛓️‍💥";
+}
+
+li:after {
+    content: "👈";
+}
+
+p::first-letter {
+    color: red;
+    font-size: 1.5rem;
+}
+
+p::first-line {
+    color: red;
+}
+
+p::selection {
+    background-color: black;
+    color: white;
+}
+
+.btn-hover:hover   {
+    color: red;
+}
+
+.btn-focus:focus   {
+    color: green;
+}
+
+.btn-active:active   {
+    color: pink;
+}
+
+.btn-disabled:disabled  {
+    background-color:black;
+}
+
+
+dialog {
+    border-radius: 10px;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
