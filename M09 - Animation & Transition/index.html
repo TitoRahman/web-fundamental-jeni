@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyframes Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            animation: moveBox 3s infinite ease-in;
+        }
+
+        @keyframes moveBox {
+            0% {
+                transform: translateX(0);
+                background: tomato;
+            }
+
+            50% {
+                transform: translateX(200px);
+                background: royalblue;
+            }
+
+            100% {
+                transform: translateX(0);
+                background: green;
+            }
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background: red;
+
+            transition: 0.5s;
+        }
+
+        .box2:hover {
+            transform: scale(1.2) translateX(50px);
+            background: blue;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<br>
+<div class="box2 animate-spin animate-ping">
+
+</div>
+<div class="box2 animate-ping">
+
+</div>
+</body>
+</html>

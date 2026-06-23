@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* BODY */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* PSEUDO ELEMENT */
+        header h1::before {
+            content: "🏫 ";
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #ffffff;
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            padding: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* PSEUDO CLASS */
+        nav a:hover {
+            color: royalblue;
+        }
+
+        /* MAIN */
+        main {
+            padding: 20px;
+        }
+
+        /* CARD CONTAINER */
+        .club-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* CARD */
+        .club-card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+
+            transition: 0.3s;
+        }
+
+        /* PSEUDO ELEMENT */
+        .club-card h2::before {
+            content: "⭐ ";
+        }
+
+        /* PSEUDO CLASS */
+        .club-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* BUTTON */
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background-color: royalblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* PSEUDO ELEMENT */
+        button::after {
+            content: " →";
+        }
+
+        /* FIRST CARD */
+        .club-card:first-child {
+            border: 3px solid gold;
+        }
+
+        /* LAST CARD */
+        .club-card:last-child {
+            background-color: #d8f3dc;
+        }
+
+        /* EVEN CARDS */
+        .club-card:nth-child(even) {
+            background-color: #edf2ff;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 30px;
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>School Clubs</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Clubs</a>
+    <a href="#">Events</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <div class="club-container">
+
+        <div class="club-card">
+            <h2>Photography Club</h2>
+            <p>Learn photography skills.</p>
+            <button>Join Now</button>
+        </div>
+
+        <div class="club-card">
+            <h2>Coding Club</h2>
+            <p>Learn programming.</p>
+            <button>Join Now</button>
+        </div>
+
+        <div class="club-card">
+            <h2>Art Club</h2>
+            <p>Create amazing artwork.</p>
+            <button>Join Now</button>
+        </div>
+
+        <div class="club-card">
+            <h2>Music Club</h2>
+            <p>Practice musical instruments.</p>
+            <button>Join Now</button>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    © 2026 School Clubs
+</footer>
+</body>
+</html>
